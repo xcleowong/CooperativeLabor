@@ -157,6 +157,10 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\VueScripts\axios.js" />
+    <Content Include="Content\VueScripts\axios.min.js" />
+    <Content Include="Content\VueScripts\vue-resource.js" />
+    <Content Include="Content\VueScripts\vue.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -166,6 +170,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\VueScripts\axios.map" />
+    <Content Include="Content\VueScripts\axios.min.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -206,6 +212,28 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CooperativeLabor.Cache\CooperativeLabor.Cache.csproj">
+      <Project>{25a5a2cf-ba9b-4690-aa00-e8110ae1d4aa}</Project>
+      <Name>CooperativeLabor.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CooperativeLabor.Common\CooperativeLabor.Common.csproj">
+      <Project>{d31a57e0-280e-46a2-b54f-c37979b69e9a}</Project>
+      <Name>CooperativeLabor.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CooperativeLabor.IServices\CooperativeLabor.IServices.csproj">
+      <Project>{5cb39da5-e334-4a6c-b2d4-acd5c84263e8}</Project>
+      <Name>CooperativeLabor.IServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CooperativeLabor.Model\CooperativeLabor.Model.csproj">
+      <Project>{5532cc8e-108e-4f34-a814-4181e32945c8}</Project>
+      <Name>CooperativeLabor.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CooperativeLabor.Services\CooperativeLabor.Services.csproj">
+      <Project>{8c420262-604a-4cf9-9d60-29c8f4cb8af9}</Project>
+      <Name>CooperativeLabor.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
