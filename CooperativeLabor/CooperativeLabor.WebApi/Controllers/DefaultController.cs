@@ -38,7 +38,7 @@ namespace CooperativeLabor.WebApi.Controllers
 
 
         //方法二
-        //不需要引用Unity
+        //不需要引用Unity命名空间
         ITestServices _bookscarkservice = null;
         /// <summary>
         /// 构造函数注入点
